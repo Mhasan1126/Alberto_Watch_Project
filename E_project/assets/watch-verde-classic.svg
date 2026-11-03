@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 650" width="100%" height="100%">
+  <defs>
+    <radialGradient id="forestGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1b4936"/>
+      <stop offset="65%" stop-color="#0E2A1F"/>
+      <stop offset="100%" stop-color="#06120d"/>
+    </radialGradient>
+    <linearGradient id="champagneGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5ED"/>
+      <stop offset="35%" stop-color="#D4C9A4"/>
+      <stop offset="70%" stop-color="#aa9a70"/>
+      <stop offset="100%" stop-color="#edd382"/>
+    </linearGradient>
+    <linearGradient id="oliveLeather" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4e5c42"/>
+      <stop offset="30%" stop-color="#6B7F5B"/>
+      <stop offset="70%" stop-color="#6B7F5B"/>
+      <stop offset="100%" stop-color="#3c4733"/>
+    </linearGradient>
+    <filter id="shadowVerde" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowVerde)">
+    <!-- Upper Olive Leather Strap -->
+    <path d="M 135 45 L 265 45 L 260 190 L 140 190 Z" fill="url(#oliveLeather)" stroke="#2b3324" stroke-width="2"/>
+    <line x1="145" y1="55" x2="148" y2="185" stroke="#D4C9A4" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="255" y1="55" x2="252" y2="185" stroke="#D4C9A4" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- Lower Olive Leather Strap -->
+    <path d="M 140 440 L 260 440 L 265 585 L 135 585 Z" fill="url(#oliveLeather)" stroke="#2b3324" stroke-width="2"/>
+    <line x1="148" y1="445" x2="145" y2="575" stroke="#D4C9A4" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="252" y1="445" x2="255" y2="575" stroke="#D4C9A4" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <!-- Watch Lugs (Satin Steel) -->
+    <path d="M 125 180 Q 110 230 110 315 Q 110 400 125 450 L 275 450 Q 290 400 290 315 Q 290 230 275 180 Z" fill="#c4cad1" stroke="#8d949c" stroke-width="1.5"/>
+
+    <!-- Champagne Fluted Bezel Ring -->
+    <circle cx="200" cy="315" r="126" fill="url(#champagneGold)"/>
+    <circle cx="200" cy="315" r="118" fill="#0E2A1F" stroke="#D4C9A4" stroke-width="2"/>
+
+    <!-- Dial Face (Forest Green Sunburst) -->
+    <circle cx="200" cy="315" r="110" fill="url(#forestGlow)"/>
+
+    <!-- Crown at 3 o'clock -->
+    <rect x="295" y="298" width="18" height="34" rx="4" fill="url(#champagneGold)" stroke="#8c7f5c" stroke-width="1"/>
+
+    <!-- Monogram at 12 o'clock -->
+    <text x="190" y="238" font-family="'Playfair Display', serif" font-size="16" font-weight="700" fill="#D4C9A4">A</text>
+    <text x="200" y="239" font-family="'Playfair Display', serif" font-size="16" font-weight="700" fill="#D4C9A4">W</text>
+    <text x="200" y="252" font-family="'Montserrat', sans-serif" font-size="6.5" font-weight="600" fill="#F7F5ED" text-anchor="middle" letter-spacing="2">ALBERTO WATCH</text>
+    <text x="200" y="260" font-family="'Montserrat', sans-serif" font-size="4.5" fill="#D4C9A4" text-anchor="middle" letter-spacing="1.5">TIME ELEVATES YOU</text>
+
+    <!-- Hour Markers (Faceted Champagne Indices) -->
+    <!-- 1 --> <rect x="246" y="242" width="5" height="16" rx="1" transform="rotate(30 248 250)" fill="#D4C9A4"/>
+    <!-- 2 --> <rect x="278" y="278" width="5" height="16" rx="1" transform="rotate(60 280 286)" fill="#D4C9A4"/>
+    <!-- 3 Date Window -->
+    <rect x="268" y="303" width="26" height="24" rx="2" fill="#F7F5ED" stroke="#D4C9A4" stroke-width="1.5"/>
+    <text x="275" y="320" font-family="'Playfair Display', serif" font-size="14" font-weight="bold" fill="#0E2A1F">28</text>
+    <!-- 4 --> <rect x="278" y="338" width="5" height="16" rx="1" transform="rotate(120 280 346)" fill="#D4C9A4"/>
+    <!-- 5 --> <rect x="246" y="374" width="5" height="16" rx="1" transform="rotate(150 248 382)" fill="#D4C9A4"/>
+    <!-- 6 --> <rect x="197" y="388" width="6" height="18" rx="1" fill="#D4C9A4"/>
+    <!-- 7 --> <rect x="148" y="374" width="5" height="16" rx="1" transform="rotate(-150 150 382)" fill="#D4C9A4"/>
+    <!-- 8 --> <rect x="116" y="338" width="5" height="16" rx="1" transform="rotate(-120 118 346)" fill="#D4C9A4"/>
+    <!-- 9 --> <rect x="105" y="312" width="18" height="6" rx="1" fill="#D4C9A4"/>
+    <!-- 10 --> <rect x="116" y="278" width="5" height="16" rx="1" transform="rotate(-60 118 286)" fill="#D4C9A4"/>
+    <!-- 11 --> <rect x="148" y="242" width="5" height="16" rx="1" transform="rotate(-30 150 250)" fill="#D4C9A4"/>
+
+    <!-- Dial Text -->
+    <text x="200" y="360" font-family="'Montserrat', sans-serif" font-size="6" font-weight="600" fill="#D4C9A4" text-anchor="middle" letter-spacing="1.5">VERDE CLASSIC</text>
+    <text x="200" y="368" font-family="'Montserrat', sans-serif" font-size="5" fill="#8d9c8f" text-anchor="middle" letter-spacing="1">AUTOMATIC &bull; 41MM</text>
+    <text x="200" y="416" font-family="'Montserrat', sans-serif" font-size="4.5" fill="#6B7F5B" text-anchor="middle">SWISS CALIBRE</text>
+
+    <!-- Hands -->
+    <!-- Hour Hand -->
+    <g transform="rotate(-40 200 315)">
+      <polygon points="196,315 198,245 200,235 202,245 204,315" fill="url(#champagneGold)"/>
+    </g>
+    <!-- Minute Hand -->
+    <g transform="rotate(45 200 315)">
+      <polygon points="197,315 198.5,210 200,200 201.5,210 203,315" fill="url(#champagneGold)"/>
+    </g>
+    <!-- Second Hand -->
+    <g transform="rotate(130 200 315)">
+      <line x1="200" y1="350" x2="200" y2="195" stroke="#F7F5ED" stroke-width="1.5"/>
+      <circle cx="200" cy="225" r="3.5" fill="#D4C9A4"/>
+    </g>
+
+    <!-- Center Cap -->
+    <circle cx="200" cy="315" r="6" fill="url(#champagneGold)"/>
+    <circle cx="200" cy="315" r="2" fill="#0E2A1F"/>
+  </g>
+</svg>

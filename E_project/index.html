@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest-midnight">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alberto Watch | Crafted for Timeless Moments</title>
+  <meta name="description" content="Alberto Watch - Luxury timepieces designed for those who value precision, elegance and a higher standard. Official Brand Portal with Forest Midnight, Ivory Atelier & Midnight Atelier themes.">
+
+  <!-- Google Fonts: Playfair Display (Headings) & Montserrat (Body/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       FIXED HEADER WRAPPER (Top Bar + Main Navigation)
+       ========================================================================== -->
+  <header class="site-header-wrapper" id="header-wrapper">
+    <!-- TOP NOTICE & CONCIERGE BAR -->
+    <aside class="top-notice-bar" aria-label="Official Brand Notice and Contact Info">
+      <div class="container top-bar-content">
+        <div class="top-bar-left">
+          <span class="top-bar-item brand-badge-notice">
+            <i class="fas fa-crown"></i> <strong>ALBERTO WATCH</strong> &bull; TIME ELEVATES YOU
+          </span>
+          <span class="top-bar-item">
+            <i class="fas fa-shield-halved"></i> 5-Year International Atelier Guarantee
+          </span>
+        </div>
+
+        <div class="top-bar-right">
+          <!-- Visitor Count Badge (Requirement: Visitor count at top right corner) -->
+          <div class="visitor-badge" title="Total Authenticated Site Visits">
+            <span class="live-dot"></span>
+            <span>VIP Visitors:</span>
+            <span class="visitor-number" id="visitor-count-number">148,920</span>
+          </div>
+          <span class="top-bar-item concierge-phone">
+            <i class="fas fa-phone-alt"></i> Contact: <strong>+92 315 1211168 | 03178405596</strong>
+          </span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN NAVIGATION BAR -->
+    <div class="main-header" id="header">
+      <div class="container header-inner">
+        <!-- Brand Logo (Interlocking AW Monogram from Brand Sheet) -->
+        <a href="#hero" class="brand-logo-container">
+          <svg class="brand-crest" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg" aria-label="AW Monogram">
+            <text x="10" y="60" font-family="'Playfair Display', serif" font-size="54" font-weight="700" fill="var(--primary-gold)">A</text>
+            <text x="38" y="62" font-family="'Playfair Display', serif" font-size="54" font-weight="700" fill="var(--primary-gold)">W</text>
+          </svg>
+          <div class="brand-text-block">
+            <span class="brand-name">ALBERTO WATCH</span>
+            <span class="brand-subtitle">TIME ELEVATES YOU</span>
+          </div>
+        </a>
+
+        <!-- Navigation Menu with Interactive Dropdowns -->
+        <nav class="nav-menu" id="main-nav-menu">
+          <a href="#hero" class="nav-link active">Home</a>
+
+          <!-- Dropdown: Collection (Real Categories) -->
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle" type="button">
+              Collection <i class="fas fa-chevron-down nav-caret"></i>
+            </button>
+            <div class="dropdown-panel">
+              <a href="#products" class="dropdown-item" data-filter="All"><i class="fas fa-th-large"></i><span><strong>All Timepieces</strong><small>Complete Alberto collection</small></span></a>
+              <a href="#products" class="dropdown-item" data-filter="Chronograph Sport"><i class="fas fa-stopwatch"></i><span><strong>Chronograph Sport</strong><small>Carbon &amp; Monza calibres</small></span></a>
+              <a href="#products" class="dropdown-item" data-filter="Diver Series"><i class="fas fa-water"></i><span><strong>Diver Series</strong><small>300m Oceanic Blue &amp; Ceramic</small></span></a>
+              <a href="#products" class="dropdown-item" data-filter="Skeleton Mechanical"><i class="fas fa-cogs"></i><span><strong>Skeleton Mechanical</strong><small>Exposed gears &amp; Royal Gold</small></span></a>
+              <a href="#products" class="dropdown-item" data-filter="Dress Classic"><i class="fas fa-gem"></i><span><strong>Dress Classic</strong><small>Emerald, Rose Gold &amp; Platinum</small></span></a>
+              <a href="#products" class="dropdown-item" data-filter="Aviator GMT"><i class="fas fa-compass"></i><span><strong>Aviator GMT</strong><small>Bronze Horizon &amp; Tactical</small></span></a>
+              <a href="#products" class="dropdown-item" data-filter="Minimalist Urban"><i class="fas fa-minus"></i><span><strong>Minimalist Urban</strong><small>Copper &amp; Bauhaus steel</small></span></a>
+            </div>
+          </div>
+
+          <!-- Dropdown: Discover -->
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle" type="button">
+              Discover <i class="fas fa-chevron-down nav-caret"></i>
+            </button>
+            <div class="dropdown-panel">
+              <a href="#technology" class="dropdown-item"><i class="fas fa-cogs"></i><span><strong>Technology</strong><small>Calibres &amp; innovation</small></span></a>
+              <a href="#price-list" class="dropdown-item"><i class="fas fa-tags"></i><span><strong>Price List</strong><small>Official price schedule</small></span></a>
+              <a href="#gallery" class="dropdown-item"><i class="fas fa-images"></i><span><strong>Gallery</strong><small>Visual exhibition</small></span></a>
+            </div>
+          </div>
+
+          <!-- Dropdown: Services -->
+          <div class="nav-dropdown">
+            <button class="nav-link nav-dropdown-toggle" type="button">
+              Services <i class="fas fa-chevron-down nav-caret"></i>
+            </button>
+            <div class="dropdown-panel">
+              <a href="#services" class="dropdown-item"><i class="fas fa-tools"></i><span><strong>Repair &amp; Appraisal</strong><small>Master atelier support</small></span></a>
+              <a href="#stores" class="dropdown-item"><i class="fas fa-map-marker-alt"></i><span><strong>Store Locator</strong><small>NY, Geneva, Karachi, Dubai</small></span></a>
+              <a href="#sitemap" class="dropdown-item"><i class="fas fa-sitemap"></i><span><strong>Site Map</strong><small>Full directory</small></span></a>
+            </div>
+          </div>
+
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+
+          <!-- Dropdown: Theme Switcher -->
+          <div class="nav-dropdown nav-dropdown-right">
+            <button class="nav-link nav-dropdown-toggle" type="button">
+              <i class="fas fa-palette"></i> Theme <i class="fas fa-chevron-down nav-caret"></i>
+            </button>
+            <div class="dropdown-panel">
+              <button class="dropdown-item theme-btn active" type="button" data-theme-choice="forest-midnight"><span class="theme-btn-dot dot-forest"></span><span><strong>Forest Midnight</strong><small>Rich, bold, timeless</small></span><i class="fas fa-check theme-check"></i></button>
+              <button class="dropdown-item theme-btn" type="button" data-theme-choice="ivory-atelier"><span class="theme-btn-dot dot-ivory"></span><span><strong>Ivory Atelier</strong><small>Clean, warm, sophisticated</small></span><i class="fas fa-check theme-check"></i></button>
+              <button class="dropdown-item theme-btn" type="button" data-theme-choice="midnight-atelier"><span class="theme-btn-dot dot-midnight"></span><span><strong>Midnight Atelier</strong><small>Deep, refined, modern</small></span><i class="fas fa-check theme-check"></i></button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Action Buttons -->
+        <div class="header-actions">
+          <a href="#products" class="btn-header-search" title="Search Timepieces">
+            <i class="fas fa-search"></i>
+          </a>
+          <button class="btn-header-wishlist" id="header-wishlist-btn" title="Open Your VIP Wishlist" onclick="openWishlistScreen()">
+            <i class="far fa-heart"></i>
+            <span class="wishlist-count">0</span>
+          </button>
+          <a href="#contact" class="btn-luxury-outline">Inquire</a>
+          <button class="mobile-nav-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       TRUST BADGES BAR (From Official Brand Board)
+       ========================================================================== -->
+  <section class="trust-badges-bar">
+    <div class="container trust-badges-grid">
+      <div class="trust-badge-item">
+        <div class="trust-badge-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="trust-badge-text">
+          <h4>Premium Quality</h4>
+          <p>Swiss &amp; In-House Regulated Calibres</p>
+        </div>
+      </div>
+      <div class="trust-badge-item">
+        <div class="trust-badge-icon"><i class="fas fa-globe"></i></div>
+        <div class="trust-badge-text">
+          <h4>Global Shipping</h4>
+          <p>Fully Insured Doorstep Transit</p>
+        </div>
+      </div>
+      <div class="trust-badge-item">
+        <div class="trust-badge-icon"><i class="fas fa-lock"></i></div>
+        <div class="trust-badge-text">
+          <h4>Secure Payment</h4>
+          <p>Encrypted VIP Financial Gateway</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HERO SLIDER (First Visual Presentation - With Real Alberto Asset Images)
+       ========================================================================== -->
+  <section class="hero-slider-section" id="hero">
+    <div class="slider-container">
+      
+      <!-- Slide 1: Skeleton Mechanical Royal Gold -->
+      <div class="slider-slide active" data-index="0">
+        <div class="slide-backdrop" style="background-image: url('assets/1-watches/type2/Alberto_Skeleton_Mechanical_watch_7a971e48.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="slide-content">
+            <span class="slide-subheading">ALBERTO WATCH &bull; THE ESSENCE</span>
+            <h1 class="slide-heading">CRAFTED FOR TIMELESS MOMENTS</h1>
+            <p class="slide-description">
+              Luxury watches designed for those who value precision, elegance and a higher standard. Discover the signature Skeleton Mechanical in hand-polished 18K gold casing.
+            </p>
+            <div class="slide-buttons">
+              <a href="#products" class="btn-primary-gold" onclick="filterCategory('Skeleton Mechanical')">
+                <span>Explore Skeleton</span> <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#stores" class="btn-ghost-luxury">
+                <i class="fas fa-map-marker-alt"></i> Find a Boutique
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Oceanic Blue Diver 300M -->
+      <div class="slider-slide" data-index="1">
+        <div class="slide-backdrop" style="background-image: url('assets/1-watches/type5/Alberto_Diver_Series_watch_20a57ec6.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="slide-content">
+            <span class="slide-subheading">MARITIME CONQUEST &bull; 300 METRES</span>
+            <h2 class="slide-heading">Alberto Diver Series Oceanic</h2>
+            <p class="slide-description">
+              Solid Oystersteel construction, 300m hydrostatic water resistance, and high-legibility turquoise azure dial with scratchproof Cerachrom ceramic bezel.
+            </p>
+            <div class="slide-buttons">
+              <a href="#products" class="btn-primary-gold" onclick="filterCategory('Diver Series')">
+                <span>View Diver Series</span> <i class="fas fa-water"></i>
+              </a>
+              <a href="#technology" class="btn-ghost-luxury">
+                <i class="fas fa-microchip"></i> Discover Calibres
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Chronograph Sport Carbon -->
+      <div class="slider-slide" data-index="2">
+        <div class="slide-backdrop" style="background-image: url('assets/1-watches/type6/Alberto_Chronograph_Sport_Carbon_6564c1db.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="slide-content">
+            <span class="slide-subheading">MOTORSPORT TELEMETRY &bull; CARBON FIBRE</span>
+            <h2 class="slide-heading">Chronograph Sport Carbon</h2>
+            <p class="slide-description">
+              Ultralight forged carbon casing paired with titanium pushers, high-contrast yellow racing registers, and vulcanized FKM rubber strap.
+            </p>
+            <div class="slide-buttons">
+              <a href="#products" class="btn-primary-gold" onclick="filterCategory('Chronograph Sport')">
+                <span>Inspect Chronograph</span> <i class="fas fa-stopwatch"></i>
+              </a>
+              <a href="#services" class="btn-ghost-luxury">
+                <i class="fas fa-tools"></i> Watch Appraisal
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Aviator GMT Bronze Horizon -->
+      <div class="slider-slide" data-index="3">
+        <div class="slide-backdrop" style="background-image: url('assets/1-watches/type3/Alberto_Aviator_GMT_Bronze_Horizon_211597d3.jpg'); background-size: cover; background-position: center;"></div>
+        <div class="slide-overlay"></div>
+        <div class="container">
+          <div class="slide-content">
+            <span class="slide-subheading">DUAL-TIME COCKPIT INSTRUMENT</span>
+            <h2 class="slide-heading">Aviator GMT Bronze Horizon</h2>
+            <p class="slide-description">
+              Forged from marine CuSn8 bronze with natural organic patina, independent 24-hour global time tracking, and oversized aviation onion crown.
+            </p>
+            <div class="slide-buttons">
+              <a href="#products" class="btn-primary-gold" onclick="filterCategory('Aviator GMT')">
+                <span>Explore Aviator GMT</span> <i class="fas fa-compass"></i>
+              </a>
+              <a href="#price-list" class="btn-ghost-luxury">
+                <i class="fas fa-list-alt"></i> Complete Price List
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slider Navigation Controls -->
+    <button class="slider-arrow slider-prev" aria-label="Previous Slide">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <button class="slider-arrow slider-next" aria-label="Next Slide">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <!-- Slide Indicators -->
+    <div class="slider-indicators">
+      <span class="slider-dot active" data-slide="0"></span>
+      <span class="slider-dot" data-slide="1"></span>
+      <span class="slider-dot" data-slide="2"></span>
+      <span class="slider-dot" data-slide="3"></span>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRODUCT CATEGORIES & CATALOG (Real Watch Models from Assets)
+       ========================================================================== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">Curated Horological Line-Up</span>
+        <h2 class="section-title">Alberto Master Collection</h2>
+        <p class="section-desc">
+          Explore our complete collection of certified luxury timepieces. High-performance chronographs, deep-sea divers, openworked skeletons, classic dress models, aviators, and minimalist urban watches.
+        </p>
+        <div class="divider-gold"></div>
+      </div>
+
+      <!-- Category Filter Tabs & Search Controls -->
+      <div class="category-filter-wrapper">
+        <div class="category-tabs">
+          <button class="category-tab-btn active" data-category="All">All Timepieces</button>
+          <button class="category-tab-btn" data-category="Chronograph Sport">Chronograph Sport</button>
+          <button class="category-tab-btn" data-category="Diver Series">Diver Series</button>
+          <button class="category-tab-btn" data-category="Skeleton Mechanical">Skeleton Mechanical</button>
+          <button class="category-tab-btn" data-category="Dress Classic">Dress Classic</button>
+          <button class="category-tab-btn" data-category="Aviator GMT">Aviator GMT</button>
+          <button class="category-tab-btn" data-category="Minimalist Urban">Minimalist Urban</button>
+        </div>
+
+        <div class="catalog-search-sort">
+          <div class="search-input-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="catalog-search-input" placeholder="Search reference, model...">
+          </div>
+          <select class="sort-select" id="catalog-sort-select">
+            <option value="default">Sort: Featured</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="name-asc">Model Name (A-Z)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Watch Grid (Rendered Dynamically via JS) -->
+      <div class="watch-grid" id="watch-cards-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOROLOGICAL TECHNOLOGY (Requirement #3: Technology used in watches)
+       ========================================================================== -->
+  <section class="technology-section" id="technology">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">Innovations & Engineering</span>
+        <h2 class="section-title">Mastery of Precision Technology</h2>
+        <p class="section-desc">
+          Every timepiece at Alberto Watch Company represents centuries of horological evolution coupled with contemporary metallurgical and micro-mechanical breakthroughs.
+        </p>
+        <div class="divider-gold"></div>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-microchip"></i></div>
+          <h3 class="tech-card-title">Superlative Chronometer & Escapement</h3>
+          <p class="tech-card-desc">
+            Equipped with paramagnetic blue Parachrom hairsprings and Chronergy escapements insensitive to magnetic fields, maintaining precision within -2/+2 seconds per day.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-shield-cat"></i></div>
+          <h3 class="tech-card-title">Cerachrom Ceramic Bezels</h3>
+          <p class="tech-card-desc">
+            Virtually scratchproof monobloc ceramic bezels impervious to ultraviolet discoloration, engraved with 24-karat gold or platinum PVD graduation numerals.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-water"></i></div>
+          <h3 class="tech-card-title">300m Hydrostatic Immersion</h3>
+          <p class="tech-card-desc">
+            Tested to 300 metres (1,000 feet) with double O-ring seals, reinforced sapphire crystals, and precision screw-down crowns.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-sun"></i></div>
+          <h3 class="tech-card-title">Citizen Eco-Drive Solar Engine</h3>
+          <p class="tech-card-desc">
+            Converts any artificial or natural light into stored electrical power, eliminating battery replacements forever while preserving clean quartz atomic synchronization.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-cogs"></i></div>
+          <h3 class="tech-card-title">Openworked Skeleton Craft</h3>
+          <p class="tech-card-desc">
+            Twin-barrel architectures delivering up to 72 hours of uninterrupted power reserve, with 28 synthetic rubies and hand-chamfered bridges.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon"><i class="fas fa-plane"></i></div>
+          <h3 class="tech-card-title">CuSn8 Marine Bronze &amp; GMT</h3>
+          <p class="tech-card-desc">
+            Organic patina development on solid bronze aviation casings paired with independent 24-hour jumping hands for transcontinental flight navigators.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRICE LIST SECTION (Requirement #7: Price list for all watches available)
+       ========================================================================== -->
+  <section class="price-list-section" id="price-list">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">Transparent Valuation & Availability</span>
+        <h2 class="section-title">Official Alberto Price Schedule</h2>
+        <p class="section-desc">
+          Complete, verified retail pricing and atelier availability for all Alberto timepieces. All orders include worldwide insured transit and Alberto Authenticity Certification.
+        </p>
+        <div class="divider-gold"></div>
+      </div>
+
+      <div class="price-table-wrapper">
+        <div class="price-table-header-controls">
+          <div class="price-table-counter">
+            Showing <span id="price-list-count">16</span> Verified Timepieces
+          </div>
+          <div class="search-input-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="price-table-search" placeholder="Filter by model, reference...">
+          </div>
+        </div>
+
+        <table class="luxury-table">
+          <thead>
+            <tr>
+              <th>Timepiece / Brand</th>
+              <th>Reference</th>
+              <th>Collection</th>
+              <th>Calibre Movement</th>
+              <th>Retail Price</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="price-list-tbody">
+            <!-- Dynamically populated via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES & APPRAISAL (Alberto Full-Service Watch Repair & Appraisal)
+       ========================================================================== -->
+  <section class="services-section" id="services" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">Atelier & Concierge Support</span>
+        <h2 class="section-title">Full-Service Repair & Certified Appraisal</h2>
+        <p class="section-desc">
+          Alberto Watch Company is a certified full-service repair atelier. From complete mechanical disassembly and ultrasonic cleaning to insurance appraisal certificates.
+        </p>
+        <div class="divider-gold"></div>
+      </div>
+
+      <div class="repair-appraisal-box">
+        <div>
+          <h3 class="repair-title">Swiss-Certified Master Atelier</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7;">
+            Our master watchmakers perform factory-authorized overhauls on Alberto, Rolex, Omega, Bulova, and high-complication timepieces. Directed by <strong>Hasan Waqas</strong> (+92 317 8405596) and <strong>Muhammad Faiz</strong> (+92 315 1211168).
+          </p>
+          <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 2; margin-bottom: 25px;">
+            <li><i class="fas fa-check" style="color: var(--primary-gold); margin-right: 8px;"></i> Certified Insurance Appraisals with Holographic Seal</li>
+            <li><i class="fas fa-check" style="color: var(--primary-gold); margin-right: 8px;"></i> Complete Movement Ultrasonic Disassembly & Lubrication</li>
+            <li><i class="fas fa-check" style="color: var(--primary-gold); margin-right: 8px;"></i> Case & Bracelet Laser Micro-Welding and Polishing</li>
+            <li><i class="fas fa-check" style="color: var(--primary-gold); margin-right: 8px;"></i> Complimentary 2-Year Atelier Service Warranty</li>
+          </ul>
+          <a href="#contact" class="btn-primary-gold">
+            <i class="fas fa-wrench"></i> Schedule Repair Consultation
+          </a>
+        </div>
+        <div style="text-align: center;">
+          <img src="assets/1-watches/type2/Alberto_Skeleton_Mechanical_Wris_72d0353a.jpg" alt="Master Watchmaker Bench" style="width: 100%; max-width: 440px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-luxury);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       STORE LOCATOR (Updated with User Details)
+       ========================================================================== -->
+  <section class="stores-section" id="stores">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">Worldwide Flagship Boutiques</span>
+        <h2 class="section-title">Alberto Store Locator</h2>
+        <p class="section-desc">
+          Visit our flagship salons for private viewings, certified appraisals, and VIP collection presentations.
+        </p>
+        <div class="divider-gold"></div>
+      </div>
+
+      <div class="store-locator-wrapper">
+        <div class="stores-list-column">
+          <div class="store-card active" data-city="New York">
+            <div class="store-header-line">
+              <h3 class="store-city-title">New York Flagship</h3>
+              <span class="store-status-badge"><i class="fas fa-circle"></i> Open Today</span>
+            </div>
+            <div class="store-detail-row"><i class="fas fa-map-pin"></i> 680 5th Avenue, New York, NY 10019, USA</div>
+            <div class="store-detail-row"><i class="fas fa-phone"></i> +92 315 1211168</div>
+            <div class="store-detail-row"><i class="fas fa-envelope"></i> mdfaiz2713@gmail.com</div>
+            <div class="store-detail-row"><i class="fas fa-clock"></i> Mon - Sat: 10:00 AM - 7:00 PM</div>
+          </div>
+
+          <div class="store-card" data-city="Karachi">
+            <div class="store-header-line">
+              <h3 class="store-city-title">Karachi Executive Boutique</h3>
+              <span class="store-status-badge"><i class="fas fa-circle"></i> Open Today</span>
+            </div>
+            <div class="store-detail-row"><i class="fas fa-map-pin"></i> Executive Towers, Clifton Block 4, Karachi, Pakistan</div>
+            <div class="store-detail-row"><i class="fas fa-phone"></i> +92 315 1211168 / 03178405596</div>
+            <div class="store-detail-row"><i class="fas fa-envelope"></i> mdfaiz2713@gmail.com</div>
+            <div class="store-detail-row"><i class="fas fa-clock"></i> Mon - Sat: 11:00 AM - 8:00 PM</div>
+          </div>
+
+          <div class="store-card" data-city="Geneva">
+            <div class="store-header-line">
+              <h3 class="store-city-title">Geneva Atelier &amp; Salon</h3>
+              <span class="store-status-badge"><i class="fas fa-circle"></i> Open Today</span>
+            </div>
+            <div class="store-detail-row"><i class="fas fa-map-pin"></i> 42 Rue du Rhône, 1204 Genève, Switzerland</div>
+            <div class="store-detail-row"><i class="fas fa-phone"></i> 03178405596</div>
+            <div class="store-detail-row"><i class="fas fa-envelope"></i> hasanwaqas1126@gmail.com</div>
+            <div class="store-detail-row"><i class="fas fa-clock"></i> Mon - Fri: 9:30 AM - 6:30 PM</div>
+          </div>
+
+          <div class="store-card" data-city="Dubai">
+            <div class="store-header-line">
+              <h3 class="store-city-title">Dubai Mall Fashion Avenue</h3>
+              <span class="store-status-badge"><i class="fas fa-circle"></i> Open Today</span>
+            </div>
+            <div class="store-detail-row"><i class="fas fa-map-pin"></i> Fashion Avenue Level 1, Financial Center Rd, Dubai, UAE</div>
+            <div class="store-detail-row"><i class="fas fa-phone"></i> 03178405596</div>
+            <div class="store-detail-row"><i class="fas fa-envelope"></i> hasanwaqas1126@gmail.com</div>
+            <div class="store-detail-row"><i class="fas fa-clock"></i> Mon - Sun: 10:00 AM - 11:00 PM</div>
+          </div>
+        </div>
+
+        <div class="store-map-preview">
+          <div class="boutique-preview-card">
+            <span class="section-tagline" style="margin-bottom: 4px;">Selected Destination</span>
+            <h3 class="title-serif" id="preview-city-name" style="font-size: 1.5rem; color: var(--text-primary);">Alberto Flagship Fifth Avenue</h3>
+            <p id="preview-address" style="color: var(--text-secondary); font-size: 0.95rem;">680 5th Avenue, New York, NY 10019, USA</p>
+            <div style="border-top: 1px solid var(--border-light); padding-top: 15px; margin-top: 10px;">
+              <p style="color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase;">Direct Lines &amp; WhatsApp</p>
+              <p id="preview-phone" style="color: var(--primary-gold-light); font-weight: 600;">+92 315 1211168 | 03178405596</p>
+            </div>
+            <div>
+              <p style="color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase;">Direct Concierge Email</p>
+              <p id="preview-hours" style="color: var(--text-secondary); font-size: 0.88rem;">mdfaiz2713@gmail.com &bull; hasanwaqas1126@gmail.com</p>
+            </div>
+            <div>
+              <p style="color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 6px;">Available Atelier Services</p>
+              <div class="services-badge-list" id="preview-services">
+                <span class="service-pill">Full Retail</span>
+                <span class="service-pill">Certified Service</span>
+                <span class="service-pill">Custom Appraisal</span>
+                <span class="service-pill">Private VIP Salon</span>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary-gold" style="width: 100%; justify-content: center; margin-top: 25px;">
+            <i class="fas fa-envelope-open-text"></i> Book Appointment at this Boutique
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MEDIA GALLERY (With Real Images from Assets)
+       ========================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">Visual Horology Exhibition</span>
+        <h2 class="section-title">Alberto Visual Gallery</h2>
+        <p class="section-desc">
+          Explore high-definition captures of Alberto timepieces across different environments and complications. Click any frame for enlarged view.
+        </p>
+        <div class="divider-gold"></div>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card" 
+             data-full-img="assets/1-watches/type5/Alberto_Diver_Series_watch_20a57ec6.jpg" 
+             data-title="Alberto Diver Series Oceanic" 
+             data-caption="300m hydrostatic water resistance testing in marine environments.">
+          <img src="assets/1-watches/type5/Alberto_Diver_Series_watch_20a57ec6.jpg" alt="Alberto Diver Series" style="width: 100%; height: 100%; object-fit: cover;">
+          <div class="gallery-card-overlay">
+            <span class="gallery-tag">Diver Series</span>
+            <h4 class="gallery-title">Oceanic Blue 300M</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card" 
+             data-full-img="assets/1-watches/type2/Alberto_Skeleton_Mechanical_watch_7a971e48.jpg" 
+             data-title="Alberto Skeleton Royal Gold" 
+             data-caption="Exposed gear trains and ruby jewels in 18K gold casing.">
+          <img src="assets/1-watches/type2/Alberto_Skeleton_Mechanical_watch_7a971e48.jpg" alt="Skeleton Royal Gold" style="width: 100%; height: 100%; object-fit: cover;">
+          <div class="gallery-card-overlay">
+            <span class="gallery-tag">Skeleton Mechanical</span>
+            <h4 class="gallery-title">Royal Gold Skeleton</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card" 
+             data-full-img="assets/1-watches/type6/Alberto_Chronograph_Sport_Carbon_6564c1db.jpg" 
+             data-title="Alberto Chronograph Sport Carbon" 
+             data-caption="Ultralight forged carbon racing chronograph with yellow telemetry accents.">
+          <img src="assets/1-watches/type6/Alberto_Chronograph_Sport_Carbon_6564c1db.jpg" alt="Chronograph Sport Carbon" style="width: 100%; height: 100%; object-fit: cover;">
+          <div class="gallery-card-overlay">
+            <span class="gallery-tag">Chronograph Sport</span>
+            <h4 class="gallery-title">Forged Carbon Chrono</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card" 
+             data-full-img="assets/1-watches/type4/Alberto_Dress_Classic_Emerald_Im_256f7ee4.jpg" 
+             data-title="Alberto Dress Classic Emerald" 
+             data-caption="Lustrous emerald green sunburst dial with rose gold fluted bezel.">
+          <img src="assets/1-watches/type4/Alberto_Dress_Classic_Emerald_Im_256f7ee4.jpg" alt="Dress Classic Emerald" style="width: 100%; height: 100%; object-fit: cover;">
+          <div class="gallery-card-overlay">
+            <span class="gallery-tag">Dress Classic</span>
+            <h4 class="gallery-title">Emerald Heritage Dress</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card" 
+             data-full-img="assets/1-watches/type3/Alberto_Aviator_GMT_Bronze_Horizon_211597d3.jpg" 
+             data-title="Alberto Aviator GMT Bronze" 
+             data-caption="CuSn8 marine bronze pilot instrument tracking dual time zones.">
+          <img src="assets/1-watches/type3/Alberto_Aviator_GMT_Bronze_Horizon_211597d3.jpg" alt="Aviator GMT Bronze" style="width: 100%; height: 100%; object-fit: cover;">
+          <div class="gallery-card-overlay">
+            <span class="gallery-tag">Aviator GMT</span>
+            <h4 class="gallery-title">Bronze Horizon GMT</h4>
+          </div>
+        </div>
+
+        <div class="gallery-card" 
+             data-full-img="assets/1-watches/type1/Alberto_minimalist_urban_copper__7626e14c.jpg" 
+             data-title="Alberto Minimalist Urban Copper" 
+             data-caption="Bauhaus architectural purity with Milanese copper mesh loop.">
+          <img src="assets/1-watches/type1/Alberto_minimalist_urban_copper__7626e14c.jpg" alt="Minimalist Urban Copper" style="width: 100%; height: 100%; object-fit: cover;">
+          <div class="gallery-card-overlay">
+            <span class="gallery-tag">Minimalist Urban</span>
+            <h4 class="gallery-title">Urban Copper Bauhaus</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT US (With Real Watch Image)
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-content">
+          <span class="section-tagline">Since 1982 &bull; Over 40 Years of Distinction</span>
+          <h2 class="section-title">The Alberto Legacy</h2>
+          <p>
+            Alberto Watch was founded with a singular dedication: to craft timepieces for timeless moments, designed for those who value precision, elegance, and a higher standard.
+          </p>
+          <p>
+            Today, Alberto is a premier full-service watch repair, appraisal, and luxury retail house. Led by <strong>Muhammad Faiz</strong> and <strong>Hasan Waqas</strong>, our atelier delivers world-class horological maintenance, certified insurance appraisals, and bespoke acquisitions.
+          </p>
+          <p>
+            Every watch that leaves our salon carries our seal of authentication and the personal guarantee of our master watchmakers.
+          </p>
+
+          <div class="heritage-stats-row">
+            <div class="stat-item">
+              <h3>40+</h3>
+              <p>Years of Heritage</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Certified Authentic</p>
+            </div>
+            <div class="stat-item">
+              <h3>5</h3>
+              <p>Global Boutiques</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image-card" style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); height: 460px;">
+          <img src="assets/1-watches/type4/Alberto_Dress_Classic_Emerald_Im_256f7ee4.jpg" alt="Alberto Watch Craftsmanship" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT US (Updated with Faiz & Hasan Details)
+       ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">Direct Concierge Assistance</span>
+        <h2 class="section-title">Contact Alberto Watch Company</h2>
+        <p class="section-desc">
+          Whether inquiring about a specific reference, scheduling a confidential appraisal, or requesting a boutique appointment, our concierge team is at your direct service.
+        </p>
+        <div class="divider-gold"></div>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Official Organization Details with Faiz & Hasan -->
+        <div class="contact-info-cards">
+          <!-- Muhammad Faiz -->
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-user-tie"></i></div>
+            <div class="contact-card-content">
+              <h4>Muhammad Faiz</h4>
+              <p style="font-size: 0.78rem; color: var(--primary-gold); text-transform: uppercase; margin-bottom: 6px;">Sales &amp; VIP Client Acquisitions</p>
+              <p>Email: <a href="mailto:mdfaiz2713@gmail.com"><strong>mdfaiz2713@gmail.com</strong></a></p>
+              <p>Direct Call / WhatsApp: <a href="tel:+923151211168"><strong>+92 315 1211168</strong></a></p>
+            </div>
+          </div>
+
+          <!-- Hasan Waqas -->
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fas fa-tools"></i></div>
+            <div class="contact-card-content">
+              <h4>Hasan Waqas</h4>
+              <p style="font-size: 0.78rem; color: var(--primary-gold); text-transform: uppercase; margin-bottom: 6px;">Master Atelier &amp; Technical Services</p>
+              <p>Email: <a href="mailto:hasanwaqas1126@gmail.com"><strong>hasanwaqas1126@gmail.com</strong></a></p>
+              <p>Direct Call / WhatsApp: <a href="tel:03178405596"><strong>03178405596</strong></a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Contact / Booking Form -->
+        <div class="contact-form-card">
+          <h3 class="title-serif" style="color: var(--text-primary); font-size: 1.3rem; margin-bottom: 20px;">
+            Book an Atelier Appointment or Inquiry
+          </h3>
+          <form id="alberto-contact-form">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Your Full Name..." required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="name@domain.com" required>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="contact-phone">Phone / WhatsApp *</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="+92 3XX XXXXXXX" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-interest">Area of Interest</label>
+                <select id="contact-interest" class="form-control">
+                  <option value="purchase">Purchase Alberto Luxury Timepiece</option>
+                  <option value="viewing">Schedule Private Boutique Viewing</option>
+                  <option value="repair">Watch Repair &amp; Servicing (Hasan Waqas)</option>
+                  <option value="appraisal">Certified Insurance Appraisal</option>
+                  <option value="vip">VIP Concierge Acquisition (Muhammad Faiz)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message or Reference Details *</label>
+              <textarea id="contact-message" class="form-control" placeholder="Please detail the watch model, reference number, or repair request..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary-gold" style="width: 100%; justify-content: center; margin-top: 10px;">
+              <span>Transmit Inquiry to Concierge</span> <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE MAP (Requirement #9: Site map, Gallery, about us, Contact us link)
+       ========================================================================== -->
+  <section class="sitemap-section" id="sitemap">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 30px;">
+        <span class="section-tagline">Architectural Directory</span>
+        <h2 class="section-title" style="font-size: 1.8rem;">Alberto Site Map</h2>
+        <div class="divider-gold"></div>
+      </div>
+
+      <div class="sitemap-grid">
+        <div class="sitemap-col">
+          <h4>Timepiece Collections</h4>
+          <div class="sitemap-links">
+            <a href="#products"><i class="fas fa-chevron-right"></i> All Timepieces</a>
+            <a href="#products" onclick="filterCategory('Chronograph Sport');"><i class="fas fa-chevron-right"></i> Chronograph Sport</a>
+            <a href="#products" onclick="filterCategory('Diver Series');"><i class="fas fa-chevron-right"></i> Diver Series 300M</a>
+            <a href="#products" onclick="filterCategory('Skeleton Mechanical');"><i class="fas fa-chevron-right"></i> Skeleton Mechanical</a>
+            <a href="#products" onclick="filterCategory('Dress Classic');"><i class="fas fa-chevron-right"></i> Dress Classic</a>
+            <a href="#products" onclick="filterCategory('Aviator GMT');"><i class="fas fa-chevron-right"></i> Aviator GMT</a>
+            <a href="#products" onclick="filterCategory('Minimalist Urban');"><i class="fas fa-chevron-right"></i> Minimalist Urban</a>
+          </div>
+        </div>
+
+        <div class="sitemap-col">
+          <h4>Themes &amp; Technology</h4>
+          <div class="sitemap-links">
+            <a href="javascript:void(0)" onclick="switchTheme('forest-midnight');"><i class="fas fa-chevron-right"></i> Forest Midnight Theme</a>
+            <a href="javascript:void(0)" onclick="switchTheme('ivory-atelier');"><i class="fas fa-chevron-right"></i> Ivory Atelier Theme</a>
+            <a href="javascript:void(0)" onclick="switchTheme('midnight-atelier');"><i class="fas fa-chevron-right"></i> Midnight Atelier Theme</a>
+            <a href="#technology"><i class="fas fa-chevron-right"></i> Horological Technology</a>
+            <a href="#price-list"><i class="fas fa-chevron-right"></i> Official Price Schedule</a>
+          </div>
+        </div>
+
+        <div class="sitemap-col">
+          <h4>Atelier &amp; Services</h4>
+          <div class="sitemap-links">
+            <a href="#services"><i class="fas fa-chevron-right"></i> Master Repair &amp; Overhaul</a>
+            <a href="#services"><i class="fas fa-chevron-right"></i> Certified Insurance Appraisals</a>
+            <a href="#stores"><i class="fas fa-chevron-right"></i> Global Store Locator</a>
+            <a href="#gallery"><i class="fas fa-chevron-right"></i> Visual Horology Gallery</a>
+          </div>
+        </div>
+
+        <div class="sitemap-col">
+          <h4>Direct Contacts</h4>
+          <div class="sitemap-links">
+            <a href="mailto:mdfaiz2713@gmail.com"><i class="fas fa-chevron-right"></i> Muhammad Faiz: mdfaiz2713@gmail.com</a>
+            <a href="tel:+923151211168"><i class="fas fa-chevron-right"></i> Phone: +92 315 1211168</a>
+            <a href="mailto:hasanwaqas1126@gmail.com"><i class="fas fa-chevron-right"></i> Hasan Waqas: hasanwaqas1126@gmail.com</a>
+            <a href="tel:03178405596"><i class="fas fa-chevron-right"></i> Phone: 03178405596</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand-logo-container">
+          <svg class="brand-crest" viewBox="0 0 100 80" style="width: 38px; height: 38px;">
+            <text x="10" y="60" font-family="'Playfair Display', serif" font-size="54" font-weight="700" fill="var(--primary-gold)">A</text>
+            <text x="38" y="62" font-family="'Playfair Display', serif" font-size="54" font-weight="700" fill="var(--primary-gold)">W</text>
+          </svg>
+          <div class="brand-text-block">
+            <span class="brand-name" style="font-size: 1.2rem;">ALBERTO WATCH</span>
+            <span class="brand-subtitle">TIME ELEVATES YOU</span>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://wa.me/923151211168" target="_blank" class="social-link-btn" title="WhatsApp Faiz"><i class="fab fa-whatsapp"></i></a>
+          <a href="mailto:mdfaiz2713@gmail.com" class="social-link-btn" title="Email Faiz"><i class="fas fa-envelope"></i></a>
+          <a href="tel:03178405596" class="social-link-btn" title="Call Hasan"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 1982–2026 Alberto Watch Company. All rights reserved. Full-service repair, appraisal, and luxury retail.</p>
+        <p style="color: var(--primary-gold);">Concierge: +92 315 1211168 | 03178405596 &bull; mdfaiz2713@gmail.com | hasanwaqas1126@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       CONTINUOUS SCROLLING TICKER AT BOTTOM (Requirement #11)
+       Current date, time, and location using HTML5 Geolocation
+       ========================================================================== -->
+  <div class="bottom-ticker-bar" id="live-ticker-bar" aria-label="Live Market and Telemetry Ticker">
+    <div class="ticker-label-badge">
+      <i class="fas fa-satellite-dish"></i> LIVE TELEMETRY
+    </div>
+    <div class="ticker-track-wrapper">
+      <div class="ticker-track">
+        <!-- Segment 1 -->
+        <div class="ticker-segment">
+          <span><i class="far fa-calendar-alt"></i> <strong class="ticker-live-date">--</strong></span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="far fa-clock"></i> <strong class="ticker-live-time">--</strong></span>
+          <span class="ticker-divider">&bull;</span>
+          <span class="ticker-live-location"><i class="fas fa-location-arrow"></i> Detecting Location...</span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="fas fa-phone-alt"></i> Muhammad Faiz: <strong>+92 315 1211168</strong> (<a href="mailto:mdfaiz2713@gmail.com" style="color: var(--primary-gold);">mdfaiz2713@gmail.com</a>)</span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="fas fa-tools"></i> Hasan Waqas: <strong>03178405596</strong> (<a href="mailto:hasanwaqas1126@gmail.com" style="color: var(--primary-gold);">hasanwaqas1126@gmail.com</a>)</span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="fas fa-shield-alt"></i> Alberto Watch: Crafted for Timeless Moments &bull; Full-Service Repair &amp; Appraisal</span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="fas fa-award"></i> Worldwide Insured Transit &amp; Lifetime Authenticity Guarantee</span>
+        </div>
+        <!-- Segment 2 (Duplicate for Seamless Infinite Marquee) -->
+        <div class="ticker-segment">
+          <span><i class="far fa-calendar-alt"></i> <strong class="ticker-live-date">--</strong></span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="far fa-clock"></i> <strong class="ticker-live-time">--</strong></span>
+          <span class="ticker-divider">&bull;</span>
+          <span class="ticker-live-location"><i class="fas fa-location-arrow"></i> Detecting Location...</span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="fas fa-phone-alt"></i> Muhammad Faiz: <strong>+92 315 1211168</strong> (<a href="mailto:mdfaiz2713@gmail.com" style="color: var(--primary-gold);">mdfaiz2713@gmail.com</a>)</span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="fas fa-tools"></i> Hasan Waqas: <strong>03178405596</strong> (<a href="mailto:hasanwaqas1126@gmail.com" style="color: var(--primary-gold);">hasanwaqas1126@gmail.com</a>)</span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="fas fa-shield-alt"></i> Alberto Watch: Crafted for Timeless Moments &bull; Full-Service Repair &amp; Appraisal</span>
+          <span class="ticker-divider">&bull;</span>
+          <span><i class="fas fa-award"></i> Worldwide Insured Transit &amp; Lifetime Authenticity Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       POPUP WINDOW (MODAL) FOR WATCH DETAILS (Requirement #6)
+       ========================================================================== -->
+  <div class="modal-overlay" id="watch-details-modal" role="dialog" aria-modal="true">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modal-dynamic-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       GALLERY EXPANDED LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="gallery-lightbox-modal" role="dialog" aria-modal="true">
+    <div class="modal-content-card" style="max-width: 800px; padding: 25px; text-align: center;">
+      <button class="modal-close-btn" id="lightbox-close-btn" aria-label="Close Lightbox">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="lightbox-expanded-img" src="" alt="Gallery Preview" style="width: 100%; max-height: 520px; object-fit: contain; border-radius: var(--radius-sm); margin-bottom: 15px;">
+      <div id="lightbox-caption-text"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       VIP WISHLIST SLIDE-OVER SCREEN (Drawer & Item Inspector)
+       ========================================================================== -->
+  <div class="wishlist-drawer-overlay" id="wishlist-drawer-overlay" role="dialog" aria-modal="true">
+    <div class="wishlist-drawer" id="wishlist-drawer">
+      <div class="wishlist-drawer-header">
+        <div class="wishlist-header-title">
+          <i class="fas fa-heart"></i>
+          <h3>VIP Private Wishlist</h3>
+          <span class="wishlist-pill-count" id="wishlist-drawer-count">0 Items</span>
+        </div>
+        <button class="wishlist-close-btn" id="wishlist-close-btn" aria-label="Close Wishlist" onclick="closeWishlistScreen()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="wishlist-drawer-body" id="wishlist-drawer-items">
+        <!-- Dynamically rendered via JS -->
+      </div>
+
+      <div class="wishlist-drawer-footer" id="wishlist-drawer-footer">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 650" width="100%" height="100%">
+  <defs>
+    <radialGradient id="dialGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a3b2f"/>
+      <stop offset="60%" stop-color="#142119"/>
+      <stop offset="100%" stop-color="#090e0b"/>
+    </radialGradient>
+    <linearGradient id="goldCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf0cd"/>
+      <stop offset="40%" stop-color="#d4af37"/>
+      <stop offset="70%" stop-color="#aa820a"/>
+      <stop offset="100%" stop-color="#edd382"/>
+    </linearGradient>
+    <linearGradient id="steelBracelet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60666d"/>
+      <stop offset="25%" stop-color="#9da6af"/>
+      <stop offset="50%" stop-color="#d5dde5"/>
+      <stop offset="75%" stop-color="#9da6af"/>
+      <stop offset="100%" stop-color="#555a60"/>
+    </linearGradient>
+    <filter id="watchDropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#watchDropShadow)">
+    <!-- Upper Bracelet Links -->
+    <path d="M 130 50 L 270 50 L 265 190 L 135 190 Z" fill="url(#steelBracelet)"/>
+    <line x1="130" y1="90" x2="270" y2="90" stroke="#33383e" stroke-width="2"/>
+    <line x1="132" y1="135" x2="268" y2="135" stroke="#33383e" stroke-width="2"/>
+    <line x1="134" y1="175" x2="266" y2="175" stroke="#33383e" stroke-width="2"/>
+
+    <!-- Lower Bracelet Links -->
+    <path d="M 135 440 L 265 440 L 270 580 L 130 580 Z" fill="url(#steelBracelet)"/>
+    <line x1="134" y1="465" x2="266" y2="465" stroke="#33383e" stroke-width="2"/>
+    <line x1="132" y1="510" x2="268" y2="510" stroke="#33383e" stroke-width="2"/>
+    <line x1="130" y1="550" x2="270" y2="550" stroke="#33383e" stroke-width="2"/>
+
+    <!-- Watch Case Lugs -->
+    <path d="M 125 180 Q 110 230 110 315 Q 110 400 125 450 L 275 450 Q 290 400 290 315 Q 290 230 275 180 Z" fill="url(#steelBracelet)"/>
+
+    <!-- Crown & Guards -->
+    <rect x="295" y="295" width="22" height="40" rx="4" fill="url(#goldCase)"/>
+    <line x1="298" y1="300" x2="298" y2="330" stroke="#8c6e31" stroke-width="1.5"/>
+    <line x1="304" y1="300" x2="304" y2="330" stroke="#8c6e31" stroke-width="1.5"/>
+    <line x1="310" y1="300" x2="310" y2="330" stroke="#8c6e31" stroke-width="1.5"/>
+
+    <!-- Fluted Bezel Ring -->
+    <circle cx="200" cy="315" r="128" fill="url(#goldCase)"/>
+    <!-- Outer Bezel Serrations -->
+    <circle cx="200" cy="315" r="120" fill="#111" stroke="#d4af37" stroke-width="3"/>
+
+    <!-- Dial Face -->
+    <circle cx="200" cy="315" r="110" fill="url(#dialGlow)"/>
+
+    <!-- Chapter Ring Minute Track -->
+    <circle cx="200" cy="315" r="102" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.6"/>
+
+    <!-- Crown Logo at 12 o'clock -->
+    <path d="M 193 232 L 207 232 L 205 235 L 195 235 Z" fill="#edd382"/>
+    <path d="M 194 230 L 197 220 L 200 226 L 203 220 L 206 230 Z" fill="#edd382"/>
+
+    <!-- Hour Markers (Baton Markers with Gold Surround) -->
+    <!-- 1 --> <rect x="248" y="240" width="8" height="18" rx="2" transform="rotate(30 252 249)" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+    <!-- 2 --> <rect x="280" y="278" width="8" height="18" rx="2" transform="rotate(60 284 287)" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+    <!-- 3 Date Window -->
+    <rect x="270" y="303" width="28" height="24" rx="2" fill="#fff" stroke="#d4af37" stroke-width="2"/>
+    <text x="277" y="320" font-family="'Cinzel', serif" font-size="14" font-weight="bold" fill="#111">28</text>
+    <!-- 4 --> <rect x="280" y="338" width="8" height="18" rx="2" transform="rotate(120 284 347)" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+    <!-- 5 --> <rect x="248" y="375" width="8" height="18" rx="2" transform="rotate(150 252 384)" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+    <!-- 6 --> <rect x="195" y="392" width="10" height="20" rx="2" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+    <!-- 7 --> <rect x="144" y="375" width="8" height="18" rx="2" transform="rotate(-150 148 384)" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+    <!-- 8 --> <rect x="112" y="338" width="8" height="18" rx="2" transform="rotate(-120 116 347)" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+    <!-- 9 --> <rect x="100" y="310" width="20" height="10" rx="2" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+    <!-- 10 --> <rect x="112" y="278" width="8" height="18" rx="2" transform="rotate(-60 116 287)" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+    <!-- 11 --> <rect x="144" y="240" width="8" height="18" rx="2" transform="rotate(-30 148 249)" fill="#f4ebd9" stroke="#aa820a" stroke-width="1.5"/>
+
+    <!-- Brand Typography -->
+    <text x="200" y="255" font-family="'Cinzel', serif" font-size="12" font-weight="600" fill="#f5ede0" text-anchor="middle" letter-spacing="2">ALBERTO</text>
+    <text x="200" y="267" font-family="'Montserrat', sans-serif" font-size="6" font-weight="500" fill="#d4af37" text-anchor="middle" letter-spacing="1.5">OYSTER PERPETUAL</text>
+    <text x="200" y="358" font-family="'Montserrat', sans-serif" font-size="5.5" fill="#c2c8d0" text-anchor="middle" letter-spacing="1">SUPERLATIVE CHRONOMETER</text>
+    <text x="200" y="366" font-family="'Montserrat', sans-serif" font-size="5" fill="#88929e" text-anchor="middle" letter-spacing="1">OFFICIALLY CERTIFIED</text>
+    <text x="200" y="418" font-family="'Montserrat', sans-serif" font-size="4.5" fill="#aa820a" text-anchor="middle">SWISS MADE</text>
+
+    <!-- Watch Hands -->
+    <!-- Hour Hand -->
+    <g transform="rotate(-55 200 315)">
+      <path d="M 197 315 L 195 245 L 200 235 L 205 245 L 203 315 Z" fill="url(#goldCase)" stroke="#aa820a" stroke-width="1"/>
+      <rect x="198" y="250" width="4" height="45" fill="#f4ebd9"/>
+    </g>
+
+    <!-- Minute Hand -->
+    <g transform="rotate(35 200 315)">
+      <path d="M 197.5 315 L 196 210 L 200 200 L 204 210 L 202.5 315 Z" fill="url(#goldCase)" stroke="#aa820a" stroke-width="1"/>
+      <rect x="198.5" y="218" width="3" height="70" fill="#f4ebd9"/>
+    </g>
+
+    <!-- Second Hand (Vivid Green or Gold Sweep Hand) -->
+    <g transform="rotate(110 200 315)">
+      <line x1="200" y1="350" x2="200" y2="200" stroke="#2ed573" stroke-width="1.8"/>
+      <circle cx="200" cy="225" r="4.5" fill="#2ed573"/>
+    </g>
+
+    <!-- Center Pinion -->
+    <circle cx="200" cy="315" r="6" fill="url(#goldCase)"/>
+    <circle cx="200" cy="315" r="2.5" fill="#111"/>
+  </g>
+</svg>
